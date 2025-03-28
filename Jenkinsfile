@@ -1,18 +1,18 @@
 pipeline{
   agent any
   stages{
-    stage{'Build'} {
-      step{
+    stage('Build') {
+      steps{
         echo "Building Branch : ${env.main}"
       }
     }
-    stage{'Test'} {
-      step{
+    stage('Test') {
+      steps{
         echo "Testing branch : ${env.main}"
       }
     }
-    stage{'Deploy'} {
-      step{
+    stage('Deploy') {
+      steps{
         echo "Delpoying Branch : ${env.main}"
       }
     }
